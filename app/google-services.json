@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "941472922968",
+    "firebase_url": "https://reach-9962d.firebaseio.com",
+    "project_id": "reach-9962d",
+    "storage_bucket": "reach-9962d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941472922968:android:5140e2a82cd17633",
+        "android_client_info": {
+          "package_name": "com.avg.kasun.reach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941472922968-mho4597cp7hb3nvt0ua62nn06eoh276o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avg.kasun.reach",
+            "certificate_hash": "54b60dc164937e8d5bb191c5ca0437795e3f2cad"
+          }
+        },
+        {
+          "client_id": "941472922968-upef084lflq4nun0fd65b0gun94c9nuk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl2ZtCPI-SKKn5jHC1rQukrFjyINq_fK0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941472922968-upef084lflq4nun0fd65b0gun94c9nuk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
