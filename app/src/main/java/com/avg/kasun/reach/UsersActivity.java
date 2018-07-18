@@ -1,14 +1,12 @@
 package com.avg.kasun.reach;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -46,23 +44,29 @@ public class UsersActivity extends AppCompatActivity {
                 R.layout.users_single_layout,
                 UsersViewHolder.class,
                 mUsersDatabase
+
         ) {
+
             @Override
             protected void populateViewHolder(UsersViewHolder viewHolder, Users users, int position) {
+
+
                 viewHolder.setName(users.getName());
                 viewHolder.setStatus(users.getStatus());
                 viewHolder.setUserImage(users.getThumb_image());
-                final String user_id=getRef(position).getKey();
+                final String user_id = getRef(position).getKey();
                 viewHolder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(UsersActivity.this,ProfileActivity.class);
-                        intent.putExtra("user_id",user_id);
+                        Intent intent = new Intent(UsersActivity.this, ProfileActivity.class);
+                        intent.putExtra("user_id", user_id);
                         startActivity(intent);
                     }
                 });
             }
+
         };
+
         mUsersList.setAdapter(firebaseRecyclerAdapter);
 
     }
